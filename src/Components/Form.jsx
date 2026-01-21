@@ -17,7 +17,7 @@ const Form = () => {
           <img src="" alt="" className='rounded-full h-15 w-15 border-1' />
         </div>
         <div>
-          <input onClick={() => { setShowModal(true) }} type="text" name="" id="" placeholder='Start a post' className='rounded-3xl w-160 p-3 border border-gray-600 focus:ring-indigo-500' />
+          <input onClick={() => {setShowModal(true) }} type="text" name="" id="" placeholder='Start a post' className='rounded-3xl w-160 p-3 border border-gray-600 focus:ring-indigo-500' />
         </div>
       </div>
 

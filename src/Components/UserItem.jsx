@@ -1,15 +1,20 @@
+import { useState } from "react"
 
 
 
 
 export default function UserItem() {
-   
+   const [close, setClose] = useState(true)
+
+   function show () {
+    setClose(false)
+   }
   return (
     <div>
 
       
         <>
-          <section
+          <section onClick={show}
             className="fixed inset-0 bg-transparent z-40"
 
           />
@@ -20,6 +25,7 @@ export default function UserItem() {
               <button
 
                 className="text-gray-500 hover:text-gray-700 text-2xl"
+                onClick={() => {setClose(!close)}}
               >
                 ×
               </button>
